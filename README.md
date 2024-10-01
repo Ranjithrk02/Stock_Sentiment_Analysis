@@ -81,5 +81,6 @@ Frequency of mentions
 
 ## Screenshots
 
-![App Screenshot](https://pasteboard.co/Tjscyo1paQgr.png)
+![App Screenshot](Screenshots/Screenshot 2024-10-02 005211.png)
+
 
