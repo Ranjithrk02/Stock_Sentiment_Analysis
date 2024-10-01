@@ -83,7 +83,8 @@ Frequency of mentions
 
 ![App Screenshot](Screenshots/Screenshot%202024-10-02%20005211.png)
 
-![App Screenshot](Screenshots/Screenshot%2024-10-02%005256.png)
+![App Screenshot](Screenshots/Screenshot%202024-10-02%20005211.png)
+
 
 
 
