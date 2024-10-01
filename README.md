@@ -8,116 +8,38 @@ Objective
 
 The objective of this project is to understand the relationship between social media sentiment and stock price movements. By scraping relevant data, performing sentiment analysis, and correlating these insights with stock prices, we aim to uncover actionable insights for traders and investors.
 
-Data Collection
+Setup Instructions:
 
-•	Platform: Reddit (e.g., r/wallstreetbets) or Twitter (stock-specific hashtags)
+Prerequisites
+Ensure you have Python installed (version 3.6 or higher) and have pip available for package management.
 
-•	Data Source: Posts discussing stock market trends, predictions, or individual stock performance.
+Installation
+Clone the repository to your local machine:
 
-•	Data Scraping Method: Used Python libraries such as praw for Reddit and tweepy for Twitter to collect posts/tweets and their metadata.
+git clone <repository-url>
+cd Stock_Sentiment_Analysis
 
-•	File: The collected data is stored in data/reddit_stock_posts.csv.
+Install the required dependencies using pip:
+pip install -r requirements.txt
 
-Data Cleaning & Preprocessing
+Run the data scraping script to collect the required data:
+python scripts/data_scraping.py
 
-•	Handled missing values and removed noise from the dataset.
+Open the Jupyter Notebook for analysis:
+jupyter notebook notebooks/Stock_Sentiment_Analysis.ipynb
 
-•	Transformed text data into a structured format suitable for sentiment analysis.
+Analysis Results
+Key Findings
 
-•	Performed feature extraction, including sentiment polarity and frequency of stock mentions.
+Sentiment Analysis:
+Stock X shows a significant positive sentiment in discussions, correlating with a price increase over the last month.
+Stock Y has frequent mentions, but sentiment is predominantly negative, which coincides with a downward price trend.
 
-Data Analysis & Feature Extraction
-
-•	Sentiment Analysis: Utilized VADER (Valence Aware Dictionary and sEntiment Reasoner) to perform sentiment analysis and determine whether discussions are positive, negative, or neutral.
-
-•	Key Features: Extracted features like sentiment polarity, frequency of mentions for specific stocks, and overall sentiment trends.
-
-•	Topic Modeling (optional): Identified key themes and topics in discussions using LDA (Latent Dirichlet Allocation).
-
-Visualization & Reporting
-
-•	Created visualizations using matplotlib and seaborn to display:
-
-•	Trends in sentiment polarity over time.
-
-•	Frequency of stock mentions.
-
-•	Correlation between sentiment and stock price movements.
-
-Example Visualizations
-
-1.	Sentiment Trend Over Time: Displays how the sentiment for a particular stock has changed over time.
-   
-2.	Mentions vs. Stock Price: Shows if there is any visible correlation between the frequency of mentions and the stock's price movement.
-   
-3.	Sentiment Correlation: Illustrates how positive or negative sentiment correlates with price changes.
-   
-Results & Findings
-
-Key Insights
-
-1.	Stock X shows a strong correlation between negative sentiment and price drops. This could be a signal for traders to take caution when the overall sentiment turns negative.
-2.	
-3.	Stock Y experiences a rise in price when there is a high volume of positive mentions, indicating potential buy signals.
-Possible Buy/Sell Signals
-
-Based on the analysis, buy/sell signals were derived as follows:
-
-•	Buy Signal: When there is a spike in positive sentiment and a high frequency of mentions, it could indicate increased interest and a potential price surge.
-
-•	Sell Signal: When there is a sudden increase in negative sentiment, it could be a signal to sell before further price drops.
+Actionable Insights
+Stock X: The positive sentiment indicates a potential buy signal; traders may consider investing.
+Stock Y: The negative sentiment coupled with price drops suggests caution; traders may consider selling or avoiding this stock.
 
 Recommendations
-
-•	Diversifying Data Sources: Future analysis could benefit from integrating additional sources like financial news articles or quarterly financial reports.
-
-•	Advanced Sentiment Analysis: Utilizing deep learning models such as BERT or RoBERTa for more nuanced sentiment classification.
-
-How to Run the Project
-
-Setup Instructions
-
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/your_username/Stock_Sentiment_Analysis.git
-Navigate to the project directory:
-bash
-Copy code
-cd Stock_Sentiment_Analysis
-Create a virtual environment and activate it:
-bash
-Copy code
-python -m venv env
-source env/bin/activate    # On Windows, use `env\Scripts\activate`
-Install dependencies:
-bash
-Copy code
-pip install -r requirements.txt
-Running the Jupyter Notebook
-Launch Jupyter Notebook:
-bash
-Copy code
-jupyter notebook
-Open the notebooks/Stock_Sentiment_Analysis.ipynb file and run the cells in sequence.
-Running the Python Scripts
-Data Scraping: Run the data scraping script to collect the necessary data.
-bash
-Copy code
-python scripts/data_scraping.py
-Sentiment Analysis: Run the sentiment analysis script to analyze and visualize the sentiment trends.
-bash
-Copy code
-python scripts/sentiment_analysis.py
-Dependencies
-pandas
-numpy
-matplotlib
-seaborn
-nltk
-vaderSentiment
-praw (for Reddit scraping)
-sklearn
-beautifulsoup4
-
+Integrate additional data sources, such as financial news and reports, to enhance the analysis.
+Utilize advanced sentiment analysis techniques like deep learning for more nuanced insights.
 
