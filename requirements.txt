@@ -1,6 +1,7 @@
 # Data Collection
 praw==7.6.0           # Reddit API Wrapper (for data collection from Reddit)
 requests==2.28.1      # To make HTTP requests (if required for scraping)
+yfinance==0.2.12      # Yahoo Finance API for fetching stock price data
 
 # Data Manipulation & Analysis
 pandas==1.5.2         # For data manipulation and analysis
