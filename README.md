@@ -85,6 +85,24 @@ Frequency of mentions
 
 ![App Screenshot](Screenshots/Screenshot%202024-10-02%20005256.png)
 
+## Sentiment Counts
+- Neutral Sentiments: 298 occurrences
+- Negative Sentiments: 2 occurrences
+This indicates that a vast majority (approximately 99.3%) of the comments are neutral, with only a minimal presence of negative sentiment.
+
+## Stock Mentions
+- Total Mentions of AAPL: 0 mentions
+This suggests that there were no discussions regarding the stock AAPL in the comments analyzed. This could indicate a lack of interest in AAPL in the context of the discussions on the specific subreddit or threads examined.
+
+## Recommendations Based on Findings
+-1 Broaden Data Collection: To obtain a more comprehensive view, consider scraping additional subreddits or posts related to stocks or more popular stocks to capture relevant discussions and sentiments.
+
+-2 Analyze Other Stocks: If AAPL is not being mentioned, it may be beneficial to track discussions around other stocks that are currently trending or of interest to the audience, such as those in the news or actively traded.
+
+-3 Sentiment Analysis Model Evaluation: Given the overwhelming neutrality in sentiment, reviewing the sentiment analysis model's configuration may help enhance its sensitivity and accuracy in capturing a broader range of sentiments, especially positive ones.
+
+-4 Monitor Changes Over Time: It might be valuable to conduct this analysis over different time periods to observe trends and changes in sentiment and stock mentions. This could help identify any potential correlations with stock price movements.
+
 
 
 
