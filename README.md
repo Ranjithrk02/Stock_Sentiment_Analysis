@@ -29,27 +29,57 @@ Install the required dependencies using `pip`:
 ```bash
 pip install -r requirements.txt
 ```
+ ### Get API Keys
+
+ You will need API keys to access Reddit API:
+
+ ### Reddit API:
+- Go to the Reddit App Preferences.
+- Click on "Create App" or "Create Another App."
+- Fill in the required fields. Select the script option.
+- Note the `client_id`, `client_secret`, and `user_agent`.
+
+### Configure API Keys:
+
+REDDIT_CLIENT_ID = `your_reddit_client_id`
+
+REDDIT_CLIENT_SECRET = `your_reddit_client_secret`
+
+REDDIT_USER_AGENT = `your_reddit_user_agent`
+
 Run the data scraping script to collect the required data:
 ```bash
 python scripts/data_scraping.py
 ```
 Open the Jupyter Notebook for analysis:
 ```bash
-jupyter notebook notebooks/Stock_Sentiment_Analysis.ipynb
+jupyter notebook notebooks/Stock_Sentiment_Analysis.ipynb1
 ```
+- Open the notebook and run the cells to perform sentiment analysis and feature extraction.
+
+#### Visualize Results
+
+The notebook contains code for visualizing the results. Run the corresponding cells to generate the visualizations.
+
+### Data Collection
+- Input: Raw data from Reddit (e.g., posts from r/wallstreetbets).
+- Output: Cleaned dataset containing sentiment scores, post metadata, and stock mentions.
+
+### Analysis and Feature Extraction
+- Input: Cleaned data from the scraping step.
+- Output:
+- Sentiment scores (positive, negative, neutral)
+Frequency of mentions
+- Additional features for correlation analysis
+
 # Analysis Results
 
-## Key Findings
+## Visualization
+- Input: Results from the analysis step.
+- Output: Visualizations (charts, graphs) that show trends in stock sentiment, Frequency of Mentions Over Time and Correlations between sentiment and stock price movements.
 
-Sentiment Analysis:
-- Stock X shows a significant positive sentiment in discussions,  correlating with a price increase over the last month.
-- Stock Y has frequent mentions, but sentiment is predominantly negative, which coincides with a downward price trend.
- 
- ## Actionable Insights
-- Stock X: The positive sentiment indicates a potential buy signal; traders may consider investing.
 
-- Stock Y: The negative sentiment coupled with price drops suggests caution; traders may consider selling or avoiding this stock.
-## Recommendations
+## Screenshots
 
-- Integrate additional data sources, such as financial news and reports, to enhance the analysis.
-- Utilize advanced sentiment analysis techniques like deep learning for more nuanced insights.
+![App Screenshot](https://pasteboard.co/Tjscyo1paQgr.png)
+
