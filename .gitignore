@@ -1,3 +1,4 @@
-client_id='tSQkq7wi9MC9b5PxYvoOfQ',     
+# .env
+client_id='tSQkq7wi9MC9b5PxYvoOfQ'     
 client_secret='ZCmhpJ9RUv8WLPDAROdvlNPdNgzQ8w'
 user_agent='DataHarvester'     
