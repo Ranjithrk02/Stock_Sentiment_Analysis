@@ -73,4 +73,51 @@ Recommendations
 
 •	Advanced Sentiment Analysis: Utilizing deep learning models such as BERT or RoBERTa for more nuanced sentiment classification.
 
+How to Run the Project
+
+Setup Instructions
+
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/your_username/Stock_Sentiment_Analysis.git
+Navigate to the project directory:
+bash
+Copy code
+cd Stock_Sentiment_Analysis
+Create a virtual environment and activate it:
+bash
+Copy code
+python -m venv env
+source env/bin/activate    # On Windows, use `env\Scripts\activate`
+Install dependencies:
+bash
+Copy code
+pip install -r requirements.txt
+Running the Jupyter Notebook
+Launch Jupyter Notebook:
+bash
+Copy code
+jupyter notebook
+Open the notebooks/Stock_Sentiment_Analysis.ipynb file and run the cells in sequence.
+Running the Python Scripts
+Data Scraping: Run the data scraping script to collect the necessary data.
+bash
+Copy code
+python scripts/data_scraping.py
+Sentiment Analysis: Run the sentiment analysis script to analyze and visualize the sentiment trends.
+bash
+Copy code
+python scripts/sentiment_analysis.py
+Dependencies
+pandas
+numpy
+matplotlib
+seaborn
+nltk
+vaderSentiment
+praw (for Reddit scraping)
+sklearn
+beautifulsoup4
+
 
